@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Website</title>
+
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+    
+      <div class="header">
+        <!-- Logo -->
+        <div class="logo">
+          <h1>Fashion</h1>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+          <input type="text" placeholder="Search products..." />
+          <button>Search</button>
+        </div>
+        <!-- Cart -->
+        <div class="cart">
+          <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Cart </a>
+          <div class="user">
+            <a href="#"> <i class="fa-solid fa-user"></i> Account </a>
+            <div class="dropdown">
+              <h4>Your Account</h4>
+              <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+              <a href="#"><i class="fa-solid fa-user-plus"></i> Register</a>
+              <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+              <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
+              <a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a>
+              <a href="#"
+                ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slider -->
+    <div class="slider">
+
+      <div class="slide active">
+          <img src="../images/slide1.png" alt="">
+  
+          <div class="slide-content">
+              <h5>NEW COLLECTION</h5>
+              <h1>Summer Collection</h1>
+              <p>Discover the latest fashion trends.</p>
+              <a href="#" class="btn">Shop Now</a>
+          </div>
+      </div>
+  
+      <div class="slide">
+          <img src="../images/slider2 men image.png" alt="">
+  
+          <div class="slide-content">
+              <h5>MEN'S FASHION</h5>
+              <h1>Premium Style</h1>
+              <p>Upgrade your wardrobe today.</p>
+              <a href="#" class="btn">Explore</a>
+          </div>
+      </div>
+  
+      <div class="slide">
+          <img src="../images/kids image3.png" alt="">
+  
+          <div class="slide-content">
+              <h5>KIDS COLLECTION</h5>
+              <h1>New Arrivals</h1>
+              <p>Comfortable & Stylish.</p>
+              <a href="#" class="btn">Shop Kids</a>
+          </div>
+      </div>
+  
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+  
+  </div>
+
+  <!-- Categories Section -->
+<div class="category">
+<div class="shopByCategory">
+  <h2>Shop By Category</h2>
+</div>
+</div>
+<section class="category-section">
+
+  <div class="category-card">
+      <img src="../images/categoryimages/women category image1.png" alt="Women">
+      <h3>WOMEN</h3>
+      <a href="#">SHOP NOW</a>
+  </div>
+
+  <div class="category-card">
+      <img src="../images/categoryimages/men catgory image2.png" alt="Men">
+      <h3>MEN</h3>
+      <a href="#">SHOP NOW</a>
+  </div>
+
+  <div class="category-card">
+      <img src="../images/categoryimages/kids catrgory image3.png" alt="Accessories">
+      <h3>KIDS</h3>
+      <a href="#">SHOP NOW</a>
+  </div>
+
+  <div class="category-card">
+      <img src="../images/categoryimages/shoes category image4.png" alt="Footwear">
+      <h3>SHOES</h3>
+      <a href="#">SHOP NOW</a>
+  </div>
+
+</section>
+<!-- script -->
+
+    <script>
+     const slides = document.querySelectorAll(".slide");
+
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide) => slide.classList.remove("active"));
+
+        slides[index].classList.add("active");
+      }
+
+      document.querySelector(".next").onclick = function () {
+        current++;
+
+        if (current >= slides.length) {
+          current = 0;
+        }
+
+        showSlide(current);
+      };
+
+      document.querySelector(".prev").onclick = function () {
+        current--;
+
+        if (current < 0) {
+          current = slides.length - 1;
+        }
+
+        showSlide(current);
+      };
+
+      setInterval(() => {
+        current++;
+
+        if (current >= slides.length) {
+          current = 0;
+        }
+
+        showSlide(current);
+      }, 5000);
+    </script>
+  </body>
+</html>
