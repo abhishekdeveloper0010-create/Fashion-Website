@@ -41,7 +41,15 @@ body {
   font-size: 35px;
   font-weight: bold;
 }
-
+/* ========= hamburger ======== */
+.hamburger{
+  display:none;
+  font-size:30px;
+  cursor:pointer;
+  color:#000;
+  margin-left:auto;
+}
+ 
 /* Navigation */
 
 .nav-links {
@@ -173,6 +181,70 @@ body {
 .user:hover .dropdown{
     display: block;
 }
+
+
+
+
+
+/* Desktop */
+.hamburger{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+.header{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hamburger{
+    display:block;
+}
+
+.nav-links,
+.search-box,
+.cart{
+    display:none;
+    width:100%;
+}
+
+/* Click ke baad show hoga */
+.nav-links.active,
+.search-box.active,
+.cart.active{
+    display:flex;
+}
+
+.nav-links.active{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    margin-top:20px;
+}
+
+.search-box.active{
+    flex-direction:column;
+    margin:20px 0;
+}
+
+.search-box.active input,
+.search-box.active button{
+    width:100%;
+}
+
+.cart.active{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+}
+
+
 
 
 /* Slider */
@@ -743,118 +815,103 @@ body {
 @media (max-width:768px){
 
   .header{
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      gap:15px;
-      padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:15px 20px;
+    position:relative;
   }
-  
-  .nav-links{
-      flex-direction:column;
-      align-items:center;
-      gap:10px;
+
+  /* Hamburger Show */
+  .hamburger{
+    display:block;
+    font-size:30px;
+    cursor:pointer;
   }
-  
-  .search-box{
-      width:100%;
-  }
-  
-  .search-box input{
-      width:75%;
-  }
-  
-  .search-box button{
-      padding:10px 15px;
-  }
-  
+
+  /* Hide Menu */
+  .nav-links,
+  .search-box,
   .cart{
-      flex-direction:column;
-      align-items:center;
-      gap:10px;
+    display:none;
+    width:100%;
   }
-  
+
+  /* Show when JS adds .active */
+  .header.active .nav-links,
+  .header.active .search-box,
+  .header.active .cart{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    margin-top:20px;
+  }
+
+  .nav-links a{
+    display:block;
+    padding:10px 0;
+    font-size:20px;
+  }
+
+  .search-box{
+    gap:10px;
+  }
+
+  .search-box input,
+  .search-box button{
+    width:100%;
+  }
+
+  .cart a{
+    padding:10px 0;
+  }
+
+  /* Slider */
   .slider{
-      height:450px;
+    height:450px;
+     margin-top: 140px;
   }
-  
+
   .slide-content{
-      left:20px;
-      right:20px;
-      max-width:100%;
+    left:20px;
+    right:20px;
+    max-width:100%;
   }
-  
-  .slide-content h5{
-      font-size:16px;
-  }
-  
+
   .slide-content h1{
-      font-size:32px;
-      line-height:40px;
+    font-size:32px;
+    line-height:40px;
   }
-  
+
   .slide-content p{
-      font-size:15px;
+    font-size:15px;
   }
-  
-  .btn{
-      padding:12px 25px;
+
+  .products{
+    grid-template-columns:repeat(2,1fr);
   }
-  
-  .prev,
-  .next{
-      width:40px;
-      height:40px;
-      font-size:20px;
+
+  .features{
+    grid-template-columns:1fr;
+    padding:25px;
   }
-  /* Offer */
-.offer-content{
-  left:25px;
-}
 
-.offer-content h2{
-  font-size:30px;
-}
-
-.offer-content p{
-  font-size:16px;
-}
-
-/* Products */
-.products{
-  grid-template-columns:repeat(2,1fr);
-}
-
-/* Features */
-.features{
-  grid-template-columns:1fr;
-  padding:25px;
-}
-
-.feature-box{
-  justify-content:flex-start;
-}
-
-/* Footer */
-.footer-container{
-  grid-template-columns:1fr;
-  text-align:center;
-}
-
-.social-icons{
-  justify-content:center;
-}
-
-.contact li{
-  justify-content:center;
-}
-
-.payment-icons{
-  justify-content:center;
-}
-
-  
+  .footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
   }
+
+  .social-icons,
+  .payment-icons{
+    justify-content:center;
+  }
+
+  .contact li{
+    justify-content:center;
+  }
+}
 
 /* <-- @media max-width:576px) Responsice --> */
 @media (max-width:576px){

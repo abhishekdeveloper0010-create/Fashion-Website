@@ -22,7 +22,11 @@
         <div class="logo">
           <h1>Fashion</h1>
         </div>
+        <!-- ========= hamburger ======== -->
 
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <!-- Navigation -->
         <div class="nav-links">
           <a href="#">Home</a>
@@ -355,105 +359,7 @@
 
 </footer>
 <!-- script -->
- 
-    <script>
-     const slides = document.querySelectorAll(".slide");
-     const wishlists = document.querySelectorAll(".wishlist");
-      let current = 0;
-
-      function showSlide(index) {
-        slides.forEach((slide) => slide.classList.remove("active"));
-
-        slides[index].classList.add("active");
-      }
-
-      document.querySelector(".next").onclick = function () {
-        current++;
-
-        if (current >= slides.length) {
-          current = 0;
-        }
-
-        showSlide(current);
-      };
-
-      document.querySelector(".prev").onclick = function () {
-        current--;
-
-        if (current < 0) {
-          current = slides.length - 1;
-        }
-
-        showSlide(current);
-      };
-
-      setInterval(() => {
-        current++;
-
-        if (current >= slides.length) {
-          current = 0;
-        }
-
-        showSlide(current);
-      }, 5000);
-      // Load saved wishlist
-      wishlists.forEach((item) => {
-
-const id = item.getAttribute("data-id");
-const icon = item.querySelector("i");
-
-if(localStorage.getItem("wishlist_" + id) === "true"){
-    item.classList.add("active");
-    icon.classList.remove("fa-regular");
-    icon.classList.add("fa-solid");
-}
-
-item.addEventListener("click", function(){
-
-    this.classList.toggle("active");
-
-    if(this.classList.contains("active")){
-
-        icon.classList.remove("fa-regular");
-        icon.classList.add("fa-solid");
-
-        localStorage.setItem("wishlist_" + id, "true");
-
-    }else{
-
-        icon.classList.remove("fa-solid");
-        icon.classList.add("fa-regular");
-
-        localStorage.removeItem("wishlist_" + id);
-    }
-
-});
-
-});
-    const id = item.dataset.id;
-
-    if (localStorage.getItem(id) === "true") {
-        item.classList.add("active");
-        item.querySelector("i").classList.remove("fa-regular");
-        item.querySelector("i").classList.add("fa-solid");
-    }
-
-    item.addEventListener("click", () => {
-        item.classList.toggle("active");
-
-        const icon = item.querySelector("i");
-
-        if (item.classList.contains("active")) {
-            icon.classList.remove("fa-regular");
-            icon.classList.add("fa-solid");
-            localStorage.setItem(id, "true");
-        } else {
-            icon.classList.remove("fa-solid");
-            icon.classList.add("fa-regular");
-            localStorage.removeItem(id);
-        }
-    });
- 
-    </script>
+<script src="../Home.js/home.js"></script>
+     
   </body>
 </html>
