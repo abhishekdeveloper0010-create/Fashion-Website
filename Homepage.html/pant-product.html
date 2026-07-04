@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pant-product</title>
+    <link rel="stylesheet" href="../css/men-products.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+</head>
+<body>
+
+        <!-- navbar -->
+        <div class="navbar">
+            <div class="header">
+              <!-- Logo -->
+              <a href="../Homepage.html/home.html" class="logo-link">
+                <div class="logo">
+                  <h1>Fashion</h1>
+                </div>
+              </a>
+      
+              <!-- Hamburger -->
+              <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+      
+              <!-- Navigation -->
+              <div class="nav-links">
+                <a href="../Homepage.html/home.html">Home</a>
+                <a href="../Homepage.html/shop-page.html">Shop</a>
+                <a href="../Homepage.html/about-page.html">About</a>
+                <a href="../Homepage.html/contact-page.html">Contact</a>
+              </div>
+      
+              <!-- Search -->
+              <div class="search-box">
+                <input type="text" placeholder="Search products..." />
+                <button>Search</button>
+              </div>
+      
+              <!-- Cart -->
+              <div class="cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+      
+                <div class="user">
+                  <a href="#"><i class="fa-solid fa-user"></i> Account</a>
+                  <i class="fa-solid fa-angle-down"></i>
+      
+                  <div class="dropdown">
+                    <h4>Your Account</h4>
+                    <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                    <a href="#"><i class="fa-solid fa-user-plus"></i> Register</a>
+                    <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+                    <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
+                    <a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                    <a href="#"
+                      ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="product-details">
+
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+        
+                <!-- Wishlist -->
+                <span class="wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+        
+                <!-- Main Image -->
+                <img src="../images/pant-img/pant-img.png"
+                     id="mainImage"
+                     class="main-image"
+                     alt="Product">
+        
+            </div>
+        
+            <!-- Product Info -->
+            <div class="product-info">
+        
+                <h1>Slim Fit Chino Pants</h1>
+        
+                <div class="rating">
+                    ★★★★★
+                    <span>(145 Reviews)</span>
+                </div>
+        
+               
+        <br>
+                <p class="desc">
+                  Premium cotton chino pants with a modern slim fit.<br>
+                  Soft, breathable fabric provides all-day comfort and durability.<br>
+                  Perfect for casual wear, office, travel, and everyday use. </p>
+        
+                <!-- Size -->
+                <h3>Size</h3>
+        
+                <div class="sizes">
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                </div>
+        
+                <!-- Color -->
+                <h3>Color</h3>
+
+                <!-- Thumbnails -->
+                <div class="thumbs">
+                    <img src="../images/pant-img/pant-img.png "
+                         onclick="changeImage(this.src)">
+        
+                </div>
+        
+                <!-- Quantity -->
+                <div class="product">
+
+                    <h2>$<span class="price">59.99</span></h2>
+                
+                    <div class="quantity">
+                        <button class="minus">-</button>
+                        <input type="number" class="qty" value="1" readonly>
+                        <button class="plus">+</button>
+                    </div>
+                
+                    <input type="hidden" class="product-price" value="59.99">
+                
+                </div>
+        
+                <!-- Buttons -->
+                <div class="buttons">
+        
+                    <button class="cart-btn">
+                        Add To Cart
+                    </button>
+        
+                    <button class="buy-btn">
+                        Buy Now
+                    </button>
+        
+                </div>
+        
+            </div>
+          
+             
+
+        </section>
+        
+           <!-- Products -->
+        <section class="related-products">
+        
+            <h2>Products</h2>
+        
+            <div class="products">
+        
+                <div class="product-card">
+                    
+                        <span class="wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+        
+                        <img src="../images/men-products-images/kids-product-img.png" alt="">
+                
+        
+                    <h3>Kids</h3>
+                    <p>$49.99</p>
+                </div>
+        
+                <div class="product-card">
+                    <span class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+        
+                    <img src="../images/product-img-item/product-img-item2.png" alt="">
+                    <h3>Women Blazer</h3>
+                    <p>$79.99</p>
+                </div>
+        
+                <div class="product-card">
+                    <span class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+        
+                    <img src="../images/product-img-item/product-img-item3.png" alt="">
+                    <h3>Chino Pant</h3>
+                    <p>$49.99</p>
+                </div>
+        
+                <div class="product-card">
+                    <span class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+        
+                    <img src="../images/product-img-item/product-img-item4.png" alt="">
+                    <h3>Leather Shoes</h3>
+                    <p>$69.99</p>
+                </div>
+        
+                <div class="product-card">
+                    <span class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+        
+                    <img src="../images/product-img-item/product-img-item5.png" alt="">
+                    <h3>Watch</h3>
+                    <p>$99.99</p>
+                </div>
+        
+                <div class="product-card">
+                    <span class="wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </span>
+        
+                    <img src="../images/product-img-item/product-img-item6.png" alt="">
+                    <h3>Sneakers</h3>
+                    <p>$59.99</p>
+                </div>
+        
+            </div>
+        
+        </section>
+    </section>
+        
+        </section>
+          <!-- footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo -->
+          <div class="footer-col">
+            <h2 class="logo">FASHION</h2>
+  
+            <p>
+              Timeless fashion for every moment. We blend style, quality, and
+              comfort.
+            </p>
+  
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+  
+          <!-- Shop -->
+          <div class="footer-col">
+            <h3>SHOP</h3>
+  
+            <ul>
+              <li><a href="#">All Products</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Footwear</a></li>
+            </ul>
+          </div>
+  
+          <!-- Customer Service -->
+          <div class="footer-col">
+            <h3>CUSTOMER SERVICE</h3>
+  
+            <ul>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping & Delivery</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">Size Guide</a></li>
+            </ul>
+          </div>
+  
+          <!-- Information -->
+          <div class="footer-col">
+            <h3>INFORMATION</h3>
+  
+            <ul>
+              <li><a href="../Homepage.html/about-page.html">About Us</a></li>
+              <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+  
+          <!-- Contact -->
+          <div class="footer-col">
+            <h3>CONTACT US</h3>
+  
+            <ul class="contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New
+                York, USA
+              </li>
+  
+              <li><i class="fa-regular fa-envelope"></i> support@fashion.com</li>
+  
+              <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+            </ul>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>© 2026 Fashion. All Rights Reserved.</p>
+  
+          <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+            <i class="fa-brands fa-cc-amex"></i>
+          </div>
+        </div>
+      </footer>
+        <!-- JavaScript -->
+        
+    <script src="../Home.js/home.js"></script>
+</body>
+</html>

@@ -82,4 +82,52 @@ hamburger.addEventListener("click", () => {
     cart.classList.toggle("active");
 
 });
- 
+
+// T-shirt image   change karega
+
+const colors = document.querySelectorAll(".color");
+const mainImage = document.getElementById("mainImage");
+
+colors.forEach(color => {
+
+    color.addEventListener("click", function(){
+
+        colors.forEach(c => c.classList.remove("active"));
+
+        this.classList.add("active");
+
+        mainImage.src = this.getAttribute("data-image");
+
+    });
+
+});
+
+function changeImage(src){
+
+    document.getElementById("mainImage").src = src;
+
+}
+
+
+// Quantity
+document.querySelectorAll(".product").forEach(product => {
+
+    const plus = product.querySelector(".plus");
+    const minus = product.querySelector(".minus");
+    const qty = product.querySelector(".qty");
+    const price = product.querySelector(".price");
+    const productPrice = Number(product.querySelector(".product-price").value);
+
+    plus.addEventListener("click", () => {
+        qty.value = Number(qty.value) + 1;
+        price.textContent = (qty.value * productPrice).toFixed(2);
+    });
+
+    minus.addEventListener("click", () => {
+        if (Number(qty.value) > 1) {
+            qty.value = Number(qty.value) - 1;
+            price.textContent = (qty.value * productPrice).toFixed(2);
+        }
+    });
+
+});
