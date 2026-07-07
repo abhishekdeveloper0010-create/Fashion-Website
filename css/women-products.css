@@ -440,6 +440,7 @@
   text-align: center;
 }
 
+/* products */
 .products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -456,6 +457,12 @@
   text-align: center;
 }
 
+.product-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .product-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
@@ -470,6 +477,7 @@
 .product-card h3 {
   margin: 20px 0 10px;
   font-size: 24px;
+  
 }
 
 .product-card p {
