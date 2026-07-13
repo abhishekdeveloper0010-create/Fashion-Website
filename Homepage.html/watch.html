@@ -37,14 +37,22 @@
       
               <!-- Search -->
               <div class="search-box">
-                <input type="text" placeholder="Search products..." />
-                <button>Search</button>
-              </div>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            
+                <button id="searchBtn">Search</button>
+            </div>
       
               <!-- Cart -->
               <div class="cart">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-      
+                <a href="../cart-pages/cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span id="cart-count">0</span>
+                </a>      
                 <div class="user">
                   <a href="#"><i class="fa-solid fa-user"></i> Account</a>
                   <i class="fa-solid fa-angle-down"></i>
@@ -127,8 +135,15 @@
                 <!-- Buttons -->
                 <div class="buttons">
         
-                    <button class="cart-btn">
-                        Add To Cart
+                    <button
+                    class="cart-btn"
+                    data-id="5"
+                    data-name="Minimal Watch"
+                    data-price="89.99"
+                    data-image="../images/watch-img/watch-img.png">
+              
+                    Add To Cart
+              
                     </button>
         
                     <button class="buy-btn">
@@ -232,91 +247,98 @@
         
         </section>
           <!-- footer  -->
-    <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo -->
-          <div class="footer-col">
-            <h2 class="logo">FASHION</h2>
-  
-            <p>
-              Timeless fashion for every moment. We blend style, quality, and
-              comfort.
-            </p>
-  
-            <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+          <footer class="footer">
+
+            <div class="footer-container">
+          
+                <!-- Logo -->
+                <div class="footer-col">
+                    <h2 class="logo">FASHION</h2>
+          
+                    <p>
+                        Timeless fashion for every moment.
+                        We blend style, quality, and comfort.
+                    </p>
+          
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+          
+                <!-- Shop -->
+                <div class="footer-col">
+                    <h3>SHOP</h3>
+          
+                    <ul>
+                        <li><a href="../Homepage.html/shop-page.html">All Products</a></li>
+                        <li><a href="../Homepage.html/women-products.html">Women</a></li>
+                        <li><a href="../Homepage.html/men-products.html">Men</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="../Homepage.html/shoes.html">Footwear</a></li>
+                    </ul>
+                </div>
+          
+                <!-- Customer Service -->
+                <div class="footer-col">
+                    <h3>CUSTOMER SERVICE</h3>
+          
+                    <ul>
+                        
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Delivery</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+          
+                <!-- Information -->
+                <div class="footer-col">
+                    <h3>INFORMATION</h3>
+          
+                    <ul>
+                        <li><a href="../Homepage.html/about-page.html">About Us</a></li>
+                        <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
+                        <li><a href="../Homepage.html/shop-page.html">Shop</a></li>
+                        
+                    </ul>
+                </div>
+          
+                <!-- Contact -->
+                <div class="footer-col">
+                    <h3>CONTACT US</h3>
+          
+                    <ul class="contact">
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New York, USA</li>
+          
+                        <li><i class="fa-regular fa-envelope"></i> support@fashion.com</li>
+          
+                        <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+                    </ul>
+                </div>
+          
             </div>
-          </div>
-  
-          <!-- Shop -->
-          <div class="footer-col">
-            <h3>SHOP</h3>
-  
-            <ul>
-              <li><a href="#">All Products</a></li>
-              <li><a href="#">Women</a></li>
-              <li><a href="#">Men</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Footwear</a></li>
-            </ul>
-          </div>
-  
-          <!-- Customer Service -->
-          <div class="footer-col">
-            <h3>CUSTOMER SERVICE</h3>
-  
-            <ul>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Shipping & Delivery</a></li>
-              <li><a href="#">Returns & Exchanges</a></li>
-              <li><a href="#">Size Guide</a></li>
-            </ul>
-          </div>
-  
-          <!-- Information -->
-          <div class="footer-col">
-            <h3>INFORMATION</h3>
-  
-            <ul>
-              <li><a href="../Homepage.html/about-page.html">About Us</a></li>
-              <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
-              <li><a href="../Homepage.html/shop-page.html">Shop</a></li>
-            </ul>
-          </div>
-  
-          <!-- Contact -->
-          <div class="footer-col">
-            <h3>CONTACT US</h3>
-  
-            <ul class="contact">
-              <li>
-                <i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New
-                York, USA
-              </li>
-  
-              <li><i class="fa-regular fa-envelope"></i> support@fashion.com</li>
-  
-              <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
-            </ul>
-          </div>
-        </div>
-  
-        <div class="footer-bottom">
-          <p>© 2026 Fashion. All Rights Reserved.</p>
-  
-          <div class="payment-icons">
-            <i class="fa-brands fa-cc-visa"></i>
-            <i class="fa-brands fa-cc-mastercard"></i>
-            <i class="fa-brands fa-cc-paypal"></i>
-            <i class="fa-brands fa-cc-amex"></i>
-          </div>
-        </div>
-      </footer>
+          
+            <div class="footer-bottom">
+          
+                <p>© 2026 Fashion. All Rights Reserved.</p>
+          
+                <div class="payment-icons">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                </div>
+          
+            </div>
+          
+          </footer>
         <!-- JavaScript -->
         
     <script src="../Home.js/home.js"></script>
+    <script src="../Home.js/cart.js"></script>
+    <script src="../Home.js/add-to-cart.js"></script>
 </body>
 </html>

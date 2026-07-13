@@ -38,14 +38,22 @@
 
         <!-- Search -->
         <div class="search-box">
-          <input type="text" placeholder="Search products..." />
-          <button>Search</button>
-        </div>
+          <input
+              type="text"
+              id="searchInput"
+              placeholder="Search products..."
+          >
+      
+          <button id="searchBtn">Search</button>
+      </div>
 
         <!-- Cart -->
         <div class="cart">
-          <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-
+          <a href="../cart-pages/cart.html" class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+            <span id="cart-count">0</span>
+        </a>
           <div class="user">
             <a href="#"><i class="fa-solid fa-user"></i> Account</a>
             <i class="fa-solid fa-angle-down"></i>
@@ -118,7 +126,7 @@
       <!-- Products -->
 
       <div class="products">
-        <div class="product-card">
+        <div class="product-card ">
          
             <span class="wishlist">
               <i class="fa-regular fa-heart"></i>
@@ -145,9 +153,15 @@
         </div>
         <!-- Chino Pant -->
         <div class="product-card">
-          <span class="wishlist">
-            <i class="fa-regular fa-heart"></i>
-          </span>
+          <span class="wishlist"
+          data-id="pant1"
+          data-name="Chino Pant"
+          data-price="$59.99"
+          data-image="../images/product-img-item/product-img-item3.png">
+
+        <i class="fa-regular fa-heart"></i>
+
+    </span>
           <a href="../Homepage.html/pant-product.html">
           <img src="../images/product-img-item/product-img-item3.png" />
           <h3>Chino Pant</h3>
@@ -211,7 +225,7 @@
           </span>
           <a href="../Homepage.html/women-products.html">
           <img src="../images/product-img-item/product-img-item8.png" />
-          <h3>Men Blazer</h3>
+          <h3>Women Blazer</h3>
           <p>$79.99</p>
           </a>
         </div>
@@ -239,87 +253,92 @@
     </div>
     <!-- footer  -->
     <footer class="footer">
+
       <div class="footer-container">
-        <!-- Logo -->
-        <div class="footer-col">
-          <h2 class="logo">FASHION</h2>
-
-          <p>
-            Timeless fashion for every moment. We blend style, quality, and
-            comfort.
-          </p>
-
-          <div class="social-icons">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+    
+          <!-- Logo -->
+          <div class="footer-col">
+              <h2 class="logo">FASHION</h2>
+    
+              <p>
+                  Timeless fashion for every moment.
+                  We blend style, quality, and comfort.
+              </p>
+    
+              <div class="social-icons">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+              </div>
           </div>
-        </div>
-
-        <!-- Shop -->
-        <div class="footer-col">
-          <h3>SHOP</h3>
-
-          <ul>
-            <li><a href="#">All Products</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Footwear</a></li>
-          </ul>
-        </div>
-
-        <!-- Customer Service -->
-        <div class="footer-col">
-          <h3>CUSTOMER SERVICE</h3>
-
-          <ul>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Shipping & Delivery</a></li>
-            <li><a href="#">Returns & Exchanges</a></li>
-            <li><a href="#">Size Guide</a></li>
-          </ul>
-        </div>
-
-        <!-- Information -->
-        <div class="footer-col">
-          <h3>INFORMATION</h3>
-
-          <ul>
-            <li><a href="../Homepage.html/about-page.html">About Us</a></li>
-            <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
-            <li><a href="#">Shop</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer-col">
-          <h3>CONTACT US</h3>
-
-          <ul class="contact">
-            <li>
-              <i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New
-              York, USA
-            </li>
-
-            <li><i class="fa-regular fa-envelope"></i> support@fashion.com</li>
-
-            <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
-          </ul>
-        </div>
+    
+          <!-- Shop -->
+          <div class="footer-col">
+              <h3>SHOP</h3>
+    
+              <ul>
+                  <li><a href="../Homepage.html/shop-page.html">All Products</a></li>
+                  <li><a href="../Homepage.html/women-products.html">Women</a></li>
+                  <li><a href="../Homepage.html/men-products.html">Men</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <li><a href="../Homepage.html/shoes.html">Footwear</a></li>
+              </ul>
+          </div>
+    
+          <!-- Customer Service -->
+          <div class="footer-col">
+              <h3>CUSTOMER SERVICE</h3>
+    
+              <ul>
+                  
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Shipping & Delivery</a></li>
+                  <li><a href="#">Returns & Exchanges</a></li>
+                  <li><a href="#">Size Guide</a></li>
+              </ul>
+          </div>
+    
+          <!-- Information -->
+          <div class="footer-col">
+              <h3>INFORMATION</h3>
+    
+              <ul>
+                  <li><a href="../Homepage.html/about-page.html">About Us</a></li>
+                  <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
+                  <li><a href="../Homepage.html/shop-page.html">Shop</a></li>
+                  
+              </ul>
+          </div>
+    
+          <!-- Contact -->
+          <div class="footer-col">
+              <h3>CONTACT US</h3>
+    
+              <ul class="contact">
+                  <li><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New York, USA</li>
+    
+                  <li><i class="fa-regular fa-envelope"></i> support@fashion.com</li>
+    
+                  <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+              </ul>
+          </div>
+    
       </div>
-
+    
       <div class="footer-bottom">
-        <p>© 2026 Fashion. All Rights Reserved.</p>
-
-        <div class="payment-icons">
-          <i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa-brands fa-cc-paypal"></i>
-          <i class="fa-brands fa-cc-amex"></i>
-        </div>
+    
+          <p>© 2026 Fashion. All Rights Reserved.</p>
+    
+          <div class="payment-icons">
+              <i class="fa-brands fa-cc-visa"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+              <i class="fa-brands fa-cc-amex"></i>
+          </div>
+    
       </div>
+    
     </footer>
     <script src="../Home.js/home.js"></script>
   </body>

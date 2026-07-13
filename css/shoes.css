@@ -193,6 +193,32 @@
     font-size: 30px;
     cursor: pointer;
   }
+
+  /* cart-count */
+.cart-icon{
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+#cart-count{
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  background: red;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
   
   /* Hover */
   

@@ -37,14 +37,22 @@
       
               <!-- Search -->
               <div class="search-box">
-                <input type="text" placeholder="Search products..." />
-                <button>Search</button>
-              </div>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            
+                <button id="searchBtn">Search</button>
+            </div>
       
               <!-- Cart -->
               <div class="cart">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
-      
+                <a href="../cart-pages/cart.html" class="cart-icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Cart
+                  <span id="cart-count">0</span>
+              </a>      
                 <div class="user">
                   <a href="#"><i class="fa-solid fa-user"></i> Account</a>
                   <i class="fa-solid fa-angle-down"></i>
@@ -85,7 +93,7 @@
             <!-- Product Info -->
             <div class class="product-info">
         
-                <h1>Oversized T-Shirt</h1>
+                <h1> T-Shirt</h1>
         
                 <div class="rating">
                     ★★★★★
@@ -141,12 +149,17 @@
               
               </div>
         
-                <!-- Buttons -->
-                <div class="buttons">
-        
-                    <button class="cart-btn">
-                        Add To Cart
-                    </button>
+                      <!-- Buttons --> 
+                      <button
+                      class="cart-btn"
+                      data-id="1"
+                      data-name="T-Shirt"
+                      data-price="29.99"
+                      data-image="../images/product-img-item/product-img-item1.png">
+
+                      Add To Cart
+
+                      </button>
         
                     <button class="buy-btn">
                         Buy Now
@@ -167,7 +180,7 @@
         
             <div class="products">
               <!-- Kids -->
-              <div class="product-card">
+              <div class="product-card" data-name="Men T Shirt>
                   
                       <span class="wishlist">
                           <i class="fa-regular fa-heart"></i>
@@ -335,5 +348,7 @@
         <!-- JavaScript -->
         
     <script src="../Home.js/home.js"></script>
+    <script src="../Home.js/cart.js"></script>
+    <script src="../Home.js/add-to-cart.js"></script>
 </body>
 </html>

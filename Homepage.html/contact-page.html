@@ -37,13 +37,22 @@
     
             <!-- Search -->
             <div class="search-box">
-                <input type="text" placeholder="Search products...">
-                <button>Search</button>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            
+                <button id="searchBtn">Search</button>
             </div>
     
             <!-- Cart -->
             <div class="cart">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+                <a href="../cart-pages/cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span id="cart-count">0</span>
+                </a>
     
                 <div class="user">
                     <a href="#"><i class="fa-solid fa-user"></i> Account</a>  <i class="fa-solid fa-angle-down"></i>
@@ -151,11 +160,11 @@ loading="lazy">
             <h3>SHOP</h3>
   
             <ul>
-                <li><a href="#">All Products</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">Men</a></li>
+                <li><a href="../Homepage.html/shop-page.html">All Products</a></li>
+                <li><a href="../Homepage.html/women-products.html">Women</a></li>
+                <li><a href="../Homepage.html/men-products.html">Men</a></li>
                 <li><a href="#">Accessories</a></li>
-                <li><a href="#">Footwear</a></li>
+                <li><a href="../Homepage.html/shoes.html">Footwear</a></li>
             </ul>
         </div>
   
@@ -179,7 +188,7 @@ loading="lazy">
             <ul>
                 <li><a href="../Homepage.html/about-page.html">About Us</a></li>
                 <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="../Homepage.html/shop-page.html">Shop</a></li>
                 
             </ul>
         </div>
