@@ -31,6 +31,8 @@ if (nextBtn && prevBtn) {
 
 // ================= Wishlist =================
 
+// ================= Wishlist =================
+
 const wishlists = document.querySelectorAll(".wishlist");
 
 wishlists.forEach(item => {
@@ -38,7 +40,10 @@ wishlists.forEach(item => {
     const id = item.dataset.id;
     const icon = item.querySelector("i");
 
-    if (localStorage.getItem("wishlist_" + id) === "true") {
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    // Page load
+    if (wishlist.find(product => product.id == id)) {
         item.classList.add("active");
         icon.classList.remove("fa-regular");
         icon.classList.add("fa-solid");
@@ -46,28 +51,63 @@ wishlists.forEach(item => {
 
     item.addEventListener("click", () => {
 
-        item.classList.toggle("active");
+        let product;
 
-        if (item.classList.contains("active")) {
+        // Shop Page
+        const card = item.closest(".product-card");
+
+        if(card){
+
+            product = {
+                id:id,
+                name:card.querySelector("h3").innerText,
+                price:parseFloat(card.querySelector("p").innerText.replace("$","")),
+                image:card.querySelector("img").src
+            };
+
+        }
+
+        // Product Details Page
+        else{
+
+            product = {
+                id:id,
+                name:document.querySelector(".product-info h1").innerText,
+                price:parseFloat(document.querySelector(".product-price").value),
+                image:document.getElementById("mainImage").src
+            };
+
+        }
+
+        wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+        const index = wishlist.findIndex(p=>p.id==id);
+
+        if(index==-1){
+
+            wishlist.push(product);
+
+            item.classList.add("active");
 
             icon.classList.remove("fa-regular");
             icon.classList.add("fa-solid");
 
-            localStorage.setItem("wishlist_" + id, "true");
+        }else{
 
-        } else {
+            wishlist.splice(index,1);
+
+            item.classList.remove("active");
 
             icon.classList.remove("fa-solid");
             icon.classList.add("fa-regular");
 
-            localStorage.removeItem("wishlist_" + id);
         }
+
+        localStorage.setItem("wishlist",JSON.stringify(wishlist));
 
     });
 
 });
-
-
 
 // ================= Mobile Menu =================
 

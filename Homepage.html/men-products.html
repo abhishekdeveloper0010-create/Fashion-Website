@@ -63,7 +63,7 @@
                     <a href="#"><i class="fa-solid fa-user-plus"></i> Register</a>
                     <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
                     <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
-                    <a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                    <a href="../cart-pages/wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a>
                     <a href="#"
                       ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
                     >
@@ -78,20 +78,20 @@
             <div class="product-gallery">
         
                 <!-- Wishlist -->
-                <span class="wishlist">
-                    <i class="fa-regular fa-heart"></i>
-                </span>
+                <span class="wishlist" data-id="1">
+                  <i class="fa-regular fa-heart"></i>
+              </span>
         
                 <!-- Main Image -->
                 <img src="../images/product-img-item/product-img-item1.png"
                      id="mainImage"
                      class="main-image"
                      alt="Product">
-        
+             
             </div>
         
             <!-- Product Info -->
-            <div class class="product-info">
+            <div class="product-info">
         
                 <h1> T-Shirt</h1>
         
@@ -180,25 +180,25 @@
         
             <div class="products">
               <!-- Kids -->
-              <div class="product-card" data-name="Men T Shirt>
-                  
-                      <span class="wishlist">
-                          <i class="fa-regular fa-heart"></i>
-                      </span>
-                      <a class="product-link" href="../Homepage.html/kids.html">
-                      <img src="../images/men-products-images/kids-product-img.png" alt="">
-              
-      
-                  <h3>Kids</h3>
-                  <p>$59.99</p>
-                  </a>
-              </div>
+              <div class="product-card">
+
+                <span class="wishlist" data-id="9">
+                  <i class="fa-regular fa-heart"></i>
+                </span>
+            
+                <a class="product-link" href="../Homepage.html/kids.html">
+                    <img src="../images/men-products-images/kids-product-img.png">
+                    <h3>Kids</h3>
+                    <p>59.99</p>
+                </a>
+            
+            </div>
       
               <!-- Women Blazer -->
               <div class="product-card">
-                  <span class="wishlist">
-                      <i class="fa-regular fa-heart"></i>
-                  </span>
+                <span class="wishlist" data-id="women-blazer">
+                  <i class="fa-regular fa-heart"></i>
+              </span>
               
                   <a class="product-link" href="../Homepage.html/women-products.html">
                       <img src="../images/product-img-item/product-img-item2.png" alt="Women Blazer">
@@ -209,9 +209,9 @@
       
               <!-- Chino Pant -->
               <div class="product-card">
-                  <span class="wishlist">
-                      <i class="fa-regular fa-heart"></i>
-                  </span>
+                <span class="wishlist" data-id="chino-pant">
+                  <i class="fa-regular fa-heart"></i>
+              </span>
                   <a class="product-link" href="../Homepage.html/pant-product.html">
                   <img src="../images/product-img-item/product-img-item3.png" alt="">
                   <h3>Chino Pant</h3>
@@ -221,9 +221,9 @@
       
               <!-- Leather Shoes -->
               <div class="product-card">
-                  <span class="wishlist">
-                      <i class="fa-regular fa-heart"></i>
-                  </span>
+                <span class="wishlist" data-id="leather-shoes">
+                  <i class="fa-regular fa-heart"></i>
+              </span>
                   <a class="product-link" href="../Homepage.html/Leather-Loafers.html">
                   <img src="../images/product-img-item/product-img-item4.png" alt="">
                   <h3>Leather Shoes</h3>
@@ -233,9 +233,9 @@
       
               <!-- Watch -->
               <div class="product-card">
-                  <span class="wishlist">
-                      <i class="fa-regular fa-heart"></i>
-                  </span>
+                <span class="wishlist" data-id="watch">
+                  <i class="fa-regular fa-heart"></i>
+              </span>
                   <a class="product-link" href="../Homepage.html/watch.html">
                   <img src="../images/product-img-item/product-img-item5.png" alt="">
                   <h3>Watch</h3>
@@ -245,9 +245,9 @@
       
               <!-- Sneakers -->
               <div class="product-card">
-                  <span class="wishlist">
-                      <i class="fa-regular fa-heart"></i>
-                  </span>
+                <span class="wishlist" data-id="sneakers">
+                  <i class="fa-regular fa-heart"></i>
+              </span>
                   <a href="../Homepage.html/shoes.html">
                   <img src="../images/product-img-item/product-img-item6.png" alt="">
                   <h3>Sneakers</h3>
@@ -350,5 +350,6 @@
     <script src="../Home.js/home.js"></script>
     <script src="../Home.js/cart.js"></script>
     <script src="../Home.js/add-to-cart.js"></script>
+    <script src="../Home.js/wishlist.js"></script>
 </body>
 </html>

@@ -39,13 +39,13 @@
         <!-- Search -->
         <div class="search-box">
           <input
-              type="text"
-              id="searchInput"
-              placeholder="Search products..."
-          >
-      
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+          />
+
           <button id="searchBtn">Search</button>
-      </div>
+        </div>
 
         <!-- Cart -->
         <div class="cart">
@@ -53,7 +53,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
             Cart
             <span id="cart-count">0</span>
-        </a>
+          </a>
           <div class="user">
             <a href="#"><i class="fa-solid fa-user"></i> Account</a>
             <i class="fa-solid fa-angle-down"></i>
@@ -64,8 +64,10 @@
               <a href="#"><i class="fa-solid fa-user-plus"></i> Register</a>
               <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
               <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
-              <a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a>
-              <a href="#"
+              <a href="../cart-pages/wishlist.html"
+                ><i class="fa-solid fa-heart"></i> Wishlist</a
+              >
+              <a href=""
                 ><i class="fa-solid fa-right-from-bracket"></i> Logout</a
               >
             </div>
@@ -126,119 +128,111 @@
       <!-- Products -->
 
       <div class="products">
-        <div class="product-card ">
-         
-            <span class="wishlist">
-              <i class="fa-regular fa-heart"></i>
-            </span>
-            <a href="../Homepage.html/men-products.html">
-            <img
-              src="../images/product-img-item/product-img-item1.png"
-              alt="Product"
-            />
+        <div class="product-card">
+          <span class="wishlist" data-id="1">
+            <i class="fa-regular fa-heart"></i>
+          </span>
+          <a href="../Homepage.html/men-products.html">
+            <img src="../images/product-img-item/product-img-item1.png" />
+
+            <h3> T-Shirt</h3>
+
+            <p>$29.99</p>
           </a>
-          <h3>Oversized T-Shirt</h3>
-          <p>$29.99</p>
         </div>
         <!-- Men Blazer -->
         <div class="product-card">
-          <span class="wishlist">
+          <span class="wishlist" data-id="2">
             <i class="fa-regular fa-heart"></i>
           </span>
           <a href="../Homepage.html/women-products.html">
-          <img src="../images/product-img-item/product-img-item2.png" />
-          <h3>Men Blazer</h3>
-          <p>$89.99</p>
+            <img src="../images/product-img-item/product-img-item2.png" />
+            <h3>Men Blazer</h3>
+            <p>$89.99</p>
           </a>
         </div>
         <!-- Chino Pant -->
         <div class="product-card">
-          <span class="wishlist"
-          data-id="pant1"
-          data-name="Chino Pant"
-          data-price="$59.99"
-          data-image="../images/product-img-item/product-img-item3.png">
-
-        <i class="fa-regular fa-heart"></i>
-
-    </span>
+          <span class="wishlist" data-id="3">
+            <i class="fa-regular fa-heart"></i>
+          </span>
           <a href="../Homepage.html/pant-product.html">
-          <img src="../images/product-img-item/product-img-item3.png" />
-          <h3>Chino Pant</h3>
-          <p>$59.99</p>
-        </a>
+            <img src="../images/product-img-item/product-img-item3.png" />
+            <h3>Chino Pant</h3>
+            <p>$59.99</p>
+          </a>
         </div>
 
         <!-- Leather Shoes -->
         <div class="product-card">
-          <span class="wishlist">
+          <span class="wishlist" data-id="4">
             <i class="fa-regular fa-heart"></i>
           </span>
           <a href="../Homepage.html/Leather-Loafers.html">
-          <img src="../images/product-img-item/product-img-item4.png" />
-          <h3>Leather Shoes</h3>
-          <p>$79.99</p>
+            <img src="../images/product-img-item/product-img-item4.png" />
+            <h3>Leather Shoes</h3>
+            <p>$79.99</p>
           </a>
         </div>
 
         <!-- Watch -->
         <div class="product-card">
-          <span class="wishlist">
+          <span class="wishlist" data-id="5">
             <i class="fa-regular fa-heart"></i>
           </span>
           <a href="../Homepage.html/watch.html">
-          <img src="../images/product-img-item/product-img-item5.png" />
-          <h3>Watch</h3>
-          <p>$129.99</p>
+            <img src="../images/product-img-item/product-img-item5.png" />
+            <h3>Watch</h3>
+            <p>$129.99</p>
           </a>
         </div>
 
         <!-- Sneakers -->
         <div class="product-card">
-          <span class="wishlist">
+          <span class="wishlist" data-id="6">
             <i class="fa-regular fa-heart"></i>
           </span>
           <a href="../Homepage.html/shoes.html">
-          <img src="../images/product-img-item/product-img-item6.png" />
-          <h3>Sneakers</h3>
-          <p>$69.99</p>
+            <img src="../images/product-img-item/product-img-item6.png" />
+            <h3>Sneakers</h3>
+            <p>$69.99</p>
           </a>
         </div>
 
         <!-- add  -->
         <!-- Oversized T-Shirt -->
         <div class="product-card">
-          <span class="wishlist">
+          <span class="wishlist" data-id="7">
             <i class="fa-regular fa-heart"></i>
           </span>
           <a href="../Homepage.html/Oversized-T-Shirt.html">
-          <img src="../images/product-img-item/product-img-item7.png" />
-          <h3>Oversized T-Shirt</h3>
-          <p>$99.99</p>
+            <img src="../images/product-img-item/product-img-item7.png" />
+            <h3>Oversized T-Shirt</h3>
+            <p>$99.99</p>
           </a>
         </div>
 
         <!-- Women Blazer -->
         <div class="product-card">
-          <span class="wishlist">
+          <span class="wishlist" data-id="8">
             <i class="fa-regular fa-heart"></i>
           </span>
           <a href="../Homepage.html/women-products.html">
-          <img src="../images/product-img-item/product-img-item8.png" />
-          <h3>Women Blazer</h3>
-          <p>$79.99</p>
+            <img src="../images/product-img-item/product-img-item8.png" />
+            <h3>Women Blazer</h3>
+            <p>$79.99</p>
           </a>
         </div>
 
         <!-- Kids -->
         <div class="product-card">
-          <span class="wishlist">
+          <span class="wishlist" data-id="9">
             <i class="fa-regular fa-heart"></i>
           </span>
           <a href="../Homepage.html/kids.html">
-          <img src="../images/product-img-item/product-img-item9.png" />
-          <h3>Kids</h3>
-          <p>$49.99</p>
+            <img src="../images/product-img-item/product-img-item9.png" />
+            <h3>Kids</h3>
+            <p>$49.99</p>
           </a>
         </div>
       </div>
@@ -253,93 +247,89 @@
     </div>
     <!-- footer  -->
     <footer class="footer">
-
       <div class="footer-container">
-    
-          <!-- Logo -->
-          <div class="footer-col">
-              <h2 class="logo">FASHION</h2>
-    
-              <p>
-                  Timeless fashion for every moment.
-                  We blend style, quality, and comfort.
-              </p>
-    
-              <div class="social-icons">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
-              </div>
+        <!-- Logo -->
+        <div class="footer-col">
+          <h2 class="logo">FASHION</h2>
+
+          <p>
+            Timeless fashion for every moment. We blend style, quality, and
+            comfort.
+          </p>
+
+          <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
           </div>
-    
-          <!-- Shop -->
-          <div class="footer-col">
-              <h3>SHOP</h3>
-    
-              <ul>
-                  <li><a href="../Homepage.html/shop-page.html">All Products</a></li>
-                  <li><a href="../Homepage.html/women-products.html">Women</a></li>
-                  <li><a href="../Homepage.html/men-products.html">Men</a></li>
-                  <li><a href="#">Accessories</a></li>
-                  <li><a href="../Homepage.html/shoes.html">Footwear</a></li>
-              </ul>
-          </div>
-    
-          <!-- Customer Service -->
-          <div class="footer-col">
-              <h3>CUSTOMER SERVICE</h3>
-    
-              <ul>
-                  
-                  <li><a href="#">FAQs</a></li>
-                  <li><a href="#">Shipping & Delivery</a></li>
-                  <li><a href="#">Returns & Exchanges</a></li>
-                  <li><a href="#">Size Guide</a></li>
-              </ul>
-          </div>
-    
-          <!-- Information -->
-          <div class="footer-col">
-              <h3>INFORMATION</h3>
-    
-              <ul>
-                  <li><a href="../Homepage.html/about-page.html">About Us</a></li>
-                  <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
-                  <li><a href="../Homepage.html/shop-page.html">Shop</a></li>
-                  
-              </ul>
-          </div>
-    
-          <!-- Contact -->
-          <div class="footer-col">
-              <h3>CONTACT US</h3>
-    
-              <ul class="contact">
-                  <li><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New York, USA</li>
-    
-                  <li><i class="fa-regular fa-envelope"></i> support@fashion.com</li>
-    
-                  <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
-              </ul>
-          </div>
-    
+        </div>
+
+        <!-- Shop -->
+        <div class="footer-col">
+          <h3>SHOP</h3>
+
+          <ul>
+            <li><a href="../Homepage.html/shop-page.html">All Products</a></li>
+            <li><a href="../Homepage.html/women-products.html">Women</a></li>
+            <li><a href="../Homepage.html/men-products.html">Men</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="../Homepage.html/shoes.html">Footwear</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer-col">
+          <h3>CUSTOMER SERVICE</h3>
+
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="footer-col">
+          <h3>INFORMATION</h3>
+
+          <ul>
+            <li><a href="../Homepage.html/about-page.html">About Us</a></li>
+            <li><a href="../Homepage.html/contact-page.html">Contact Us</a></li>
+            <li><a href="../Homepage.html/shop-page.html">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h3>CONTACT US</h3>
+
+          <ul class="contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 123 Fashion Street, New
+              York, USA
+            </li>
+
+            <li><i class="fa-regular fa-envelope"></i> support@fashion.com</li>
+
+            <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+          </ul>
+        </div>
       </div>
-    
+
       <div class="footer-bottom">
-    
-          <p>© 2026 Fashion. All Rights Reserved.</p>
-    
-          <div class="payment-icons">
-              <i class="fa-brands fa-cc-visa"></i>
-              <i class="fa-brands fa-cc-mastercard"></i>
-              <i class="fa-brands fa-cc-paypal"></i>
-              <i class="fa-brands fa-cc-amex"></i>
-          </div>
-    
+        <p>© 2026 Fashion. All Rights Reserved.</p>
+
+        <div class="payment-icons">
+          <i class="fa-brands fa-cc-visa"></i>
+          <i class="fa-brands fa-cc-mastercard"></i>
+          <i class="fa-brands fa-cc-paypal"></i>
+          <i class="fa-brands fa-cc-amex"></i>
+        </div>
       </div>
-    
     </footer>
     <script src="../Home.js/home.js"></script>
+    <script src="../Home.js/wishlist.js"></script>
   </body>
 </html>
