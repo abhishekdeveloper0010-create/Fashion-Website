@@ -14,8 +14,64 @@
 <body>
 
 <!-- ================= Navbar ================= -->
+    <div class="navbar">
 
-<div id="header"></div>
+        <div class="header">
+
+            <!-- Logo -->
+            <a href="#" class="logo-link">
+                <div class="logo">
+                    <h1>Fashion</h1>
+                </div>
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- Navigation -->
+            <div class="nav-links">
+                <a href="../Homepage.html/home.html">Home</a>
+                <a href="../Homepage.html/shop-page.html">Shop</a>
+                <a href="../Homepage.html/about-page.html">About</a>
+                <a href="../Homepage.html/contact-page.html">Contact</a>
+            </div>
+
+            <!-- Search -->
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search products...">
+
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <!-- Cart -->
+            <div class="cart">
+                <a href="../cart-pages/cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span id="cart-count">0</span>
+                </a>
+
+                <div class="user">
+                    <a href="#"><i class="fa-solid fa-user"></i> Account</a> <i class="fa-solid fa-angle-down"></i>
+
+                    <div class="dropdown">
+                        <h4>Your Account</h4>
+                        <a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                        <a href="../register/register.html"><i class="fa-solid fa-user-plus"></i> Register</a>
+                        <a href="#"><i class="fa-solid fa-user"></i> My Profile</a>
+                        <a href="#"><i class="fa-solid fa-box"></i> Orders</a>
+                        <a href="../cart-pages/wishlist.html"><i class="fa-solid fa-heart"></i> Wishlist</a>
+                        <a href="#"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 <!-- ================= Register ================= -->
 
@@ -345,20 +401,6 @@ Facebook
   </footer>
 
   <script src="../Home.js/home.js"></script>
-     <script>
-        fetch("../header/header.html")
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error("Header file not found: " + response.status);
-                }
-                return response.text();
-            })
-            .then(data => {
-                document.getElementById("header").innerHTML = data;
-            })
-            .catch(error => {
-                console.error("Error loading header:", error);
-            });
-    </script>
+   
 </body>
 </html>
